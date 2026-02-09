@@ -52,6 +52,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
+    align-items: center; /* 添加这行 */
 }
 
 .pop-out-photo {
@@ -66,8 +67,6 @@ body {
 .main-photo svg {
   min-width: 135%;
   height: 183%;
-    /* 添加这两行来居中SVG */
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  display: block;
+  margin: 0 auto; /* 添加这行强制水平居中 */
 }
